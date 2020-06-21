@@ -1,5 +1,5 @@
-#include "SodiumUE4PrivatePCH.h"
 #include "../Public/SodiumUE4BlueprintInterface.h"
+#include "SodiumUE4PrivatePCH.h"
 #include "SodiumUE4.h"
 #include "Misc/Base64.h"
 #include <string> 

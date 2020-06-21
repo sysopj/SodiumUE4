@@ -2,15 +2,18 @@
 
 //#include <vector>
 
+#if PLATFORM_WINDOWS
+//#include "../../ThirdParty/SodiumUE4Library/SodiumUE4.h"
+#endif // PLATFORM_WINDOWS
+
+#include "../Public/SodiumUE4.h"
 #include "SodiumUE4PrivatePCH.h"
 #include "Core.h"
 #include "Modules/ModuleManager.h"
 #include "Interfaces/IPluginManager.h"
 
 
-#if PLATFORM_WINDOWS
-//#include "../../ThirdParty/SodiumUE4Library/SodiumUE4.h"
-#endif // PLATFORM_WINDOWS
+
 
 #define LOCTEXT_NAMESPACE "FSodiumUE4Module"
 
