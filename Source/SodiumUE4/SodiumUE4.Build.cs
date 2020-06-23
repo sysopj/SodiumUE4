@@ -16,15 +16,11 @@ public class SodiumUE4 : ModuleRules
 
         string sodiumIncludes = Path.Combine(ModuleDirectory, "../ThirdParty/libsodium/");
 
-        PublicIncludePaths.AddRange(
-			new string[] {
-				"SodiumUE4/Public",
-                sodiumIncludes
-			}
-			);
-				
-		
-		PrivateIncludePaths.AddRange(new string[] {"SodiumUE4/Private"});
+		PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "Public", "SodiumUE4/Public", sodiumIncludes));
+		//PublicIncludePaths.AddRange(new string[] {"../SodiumUE4/Public",sodiumIncludes});
+
+
+		PrivateIncludePaths.AddRange(new string[] {"./SodiumUE4/Private"});
 			
 		
 		PublicDependencyModuleNames.AddRange(new string[]{"Core"});
